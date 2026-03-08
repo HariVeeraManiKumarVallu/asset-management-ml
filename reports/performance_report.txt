@@ -1,0 +1,41 @@
+Model Evaluation & Strategy Report
+Generated: 2026-03-08T22:16:37.347087
+
+Advanced Statistical Analysis
+- mean_daily_return: -0.000543
+- annualized_return: -0.127891
+- annualized_volatility: 0.405957
+- sharpe_ratio: -0.364303
+- skewness: -0.034532
+- kurtosis: 0.189394
+- value_at_risk_95: -0.043630
+- cvar_95: -0.054610
+- max_drawdown: -0.947853
+- portfolio_expected_return: 0.169938
+- portfolio_volatility: 0.200512
+- portfolio_sharpe_ratio: 0.747779
+
+Anomaly Rate: 3.03%
+
+Model Comparison
+                  model        rmse        mae          r2       mape  rmse_improvement_vs_baseline_pct
+optimized_random_forest    6.937745   5.342431    0.990838   3.611468                         90.509571
+         baseline_dummy   73.102540  63.935262   -0.017229  47.073483                          0.000000
+   tensorflow_regressor 1027.265748 873.518418 -199.872025 702.856015                      -1305.239478
+
+Best Model
+- Name: optimized_random_forest
+- RMSE: 6.937745
+- MAE: 5.342431
+- R2: 0.990838
+- MAPE: 3.61%
+- Improvement vs Baseline: 90.51%
+
+Portfolio Strategy (Long-only, Max Sharpe)
+    asset   weight
+    Apple 0.387094
+   Google 0.323278
+   Amazon 0.262501
+Microsoft 0.017448
+    Tesla 0.008180
+   Nvidia 0.001499

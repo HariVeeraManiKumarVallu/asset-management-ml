@@ -1,0 +1,29 @@
+data:
+  raw_data: data/raw/market_data.csv
+  processed_data: data/processed/cleaned_market_data.csv
+
+database:
+  db_path: database/market_data.db
+
+model:
+  model_path: models/trained_model.pkl
+  random_state: 42
+
+simulation:
+  enabled: true
+  asset_count: 6
+  periods: 365
+  seed: 42
+
+anomaly:
+  contamination: 0.03
+
+portfolio:
+  n_portfolios: 7000
+  risk_free_rate: 0.02
+  seed: 42
+
+reports:
+  performance_report: reports/performance_report.txt
+  price_plot: reports/price_trend.png
+  model_plot: reports/model_comparison.png
